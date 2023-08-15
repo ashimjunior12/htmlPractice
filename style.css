@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4c4d5f;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.logo img{
+    width: 120px;
+}
+.navigation-bar ul{
+    display: flex;
+}
+
+.navigation-bar ul li{
+    list-style: none;
+}
+.navigation-bar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px 0px 5px;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4c4d5f;
+}
+.btns{
+    padding: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.log-in{
+    border: 1px solid #00b289;
+    background: transparent;
+    color: #00b289;
+    outline: none;
+    transition: all 0.2s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.start-for-free{
+    background-color: #00b289;
+    margin-bottom: 10px;
+    border: none;
+    color: #fff;
+    outline: none;
+    padding: 6px;
+}
+.log-in:hover{
+    background: #00b289;
+    color: #fff;
+}
+.start-for-free:hover{
+    background: #029c78;
+}
+.navigation-bar li a{
+    margin-bottom: 10px;
+}
+.sub-menu-1{
+    border: 1px solid rgba(46, 44, 44, 0.2);
+    background: #fff;
+    height: fit-content;
+    width: 240px;
+    display: none;
+    padding: 0px 0px 5px 10px;
+    box-shadow: 1px 1px 5px rgba(65, 63, 63, 0.2);
+}
+
+.navigation-bar li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+}
+.sub-menu-1 ul{
+    display: block;
+}
+
+.sub-menu-1 li{
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(46, 44, 44, 0.2);
+}
+.sub-menu-1 li:last-child{
+    border-bottom: none;
+}
+.sub-menu-1 li a{
+    margin-bottom: 4px;
+}
+
+.sub-menu-2 ul li{
+    border-bottom: none;
+}
+
+.top-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+.plans-pricing{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.top-content::before{
+    content: '';
+    position: absolute;
+    background: rgba(0, 255, 255, 0.07);
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 400px;
+    height: 70%;
+    display: flex;
+    width: 82%;
+    left: 60px;
+    z-index: -1;
+
+}
+.top-content p{
+    align-self: flex-end;
+    color: #00b289;
+    font-size: 12px;
+    margin-top: 10px;
+
+
+}
+.down-content{
+    display: flex;
+    justify-content: space-around;
+    z-index: -1;
+    
+}
+.down-content p .bxs-toggle-left{
+    position: relative;
+    top: 12px;
+    color: #00b289;
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+.plans-pricing-content{
+    width: 50%;
+    margin: 0 auto;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4c4d5f;
+}
+
+
+.packages{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    top: 50px;
+    position: relative;
+}
+.package-col{
+    background-color: #fff;
+    border: 1px solid rgba(12, 12, 12, 0.3);
+    margin: 10px;
+    flex-basis: 42%;
+    padding: 80px 30px 80px 30px;
+    box-shadow: 1px 1px 10px rgba(104, 104, 104, 0.2);
+    margin-bottom: 15%;
+    position: relative;
+}
+.row{
+    display: flex;
+}
+
+.package-col p{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bor-btt::after{
+    content: '';
+    top: 4px;
+    position: relative;
+    background: #00b289;
+    display: block;
+    width: 100%;
+    height: 0.9px;
+    margin-bottom: 10px;
+}
+.package-col button{
+    margin-top: 80px;
+    width: 100%;
+    padding: 15px 0px ;
+    text-transform: uppercase;
+    background-color: #00b289;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.package-col .professional{
+    position: relative;
+    bottom: 30px;
+}
+
+.package-col .business{
+    position: relative;
+    bottom: 70px;
+}
+
+.package-col button:hover{
+    background-color: #039976;
+}
+.package-col p{
+    margin: 15px 0px;
+}
+.package-col p .bx{
+    color: #00b289;
+    font-size: 18\px;
+}
+.add-ons-content{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid rgba(59, 59, 59, 0.1);
+    box-shadow: 1px 1px 30px #b8b8b8;
+    padding: 20px;
+    margin-bottom: 3%;
+}
+.add-ons{
+    width: 80%;
+    margin: 0 auto;
+}
+.add-ons p{
+    font-weight: 100;
+}
+
+.add-ons .h-primary{
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+.left-content{
+    margin-bottom: 40px;
+}
+
+.add-ons a{
+    text-decoration: none;
+    color: #00b289;
+    position: relative;
+}
+
+.add-ons a .bx{
+    position: absolute;
+    top: 2.4px;
+    color: #00b289;
+    left: 80px;
+    transition: all 0.3s;
+}
+
+.add-ons a:hover .bx{
+    left: 90px;
+}
+
+.business-sec{
+    width: 80%;
+    margin: 50px auto;
+}
+.wrapper{
+    padding: 40px;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 211, 211, 0.1);
+    border-radius: 10px;
+}
+
+.wrapper .business-btn{
+    background-color: #00b289;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 10px;
+    padding: 0px 4px 0px 4px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    height: 30px;
+    transition: all 0.2s;
+}
+
+.wrapper .business-btn:hover{
+    background-color: #029c78;
+}
+.wrapper .green{
+    color: #00b289;
+}
+
+.frequently-asked{
+    width: 80%;
+    margin: 60px auto;
+}
+
+.frequently-container{
+    width: 100%;
+    margin: 10px auto;
+}
+.frequently-container h3{
+    font-size: 20px;
+    text-align: center;
+    color: #00b289;
+    margin-bottom: 50px;
+}
+.frequently-container a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.frequently-container a p:hover{
+    color: #00b289;
+}
+.frequently-container a p{
+    margin-bottom: 20px;
+}
+
+
+footer{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 100px;
+}
+
+.footer-col a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 10px;
+    margin: 4px;
+}
+.footer-col p{
+    margin-top: 20px;
+    color: #00b289;
+}
+
+.footer-col a:hover{
+    color: #898ba0;
+}
+
+.footer-col h5{
+    margin-bottom: 30px;
+}
+
+
+header label .menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header label .close-btn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav{
+    display: flex;
+}
+
+.heading-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+#click{
+    display: none;
+}
+
+.before-header::before{
+    content: 'Recommended';
+    position: absolute;
+    top: 25px;
+    right: -15px;
+    background-color: #00b289;
+    color: #fff;
+    transform: rotate(45deg);
+    padding: 10px;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 20px;
+
+    
+}
+footer .row{
+align-items: flex-start;
+}
+
+
+@media (max-width:800px){
+    .plans-pricing-content{
+        width: 90%;
+    }
+    .h-primary{
+        font-size: 20px;
+    }
+    .plans-pricing-content p{
+        font-size: 12px;
+    }
+    .row{
+        flex-direction: column;
+        
+    }
+    .business-sec{
+        width: 90%;
+    }
+    
+
+    footer{
+        width: 100%;
+    }
+
+    .navigation-bar ul{
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        position: fixed;
+        background-color: rgb(170, 241, 241);
+        right: -100%;
+        transition: all 0.3s;
+
+    }
+    .nav{
+        flex-direction: column;
+    }
+
+    .heading-btns{
+        flex-direction: column;
+        
+    }
+    .log-in{
+        border: none;
+    }
+    .log-in:hover{
+        background: none;
+        color: #00b289;
+    }
+    .start-for-free{
+        background: none;
+        color: #00b289;
+    }
+    .start-for-free:hover{
+        background: none;
+    }
+    header label .menu-btn{
+        display: block;
+    }
+
+    #click:checked ~ header .navigation-bar ul{
+        right: 20%;
+    }
+ 
+    #click:checked ~header label .menu-btn{
+        display: none;
+    }
+    #click:checked ~header label .close-btn{
+        display: block;
+    }
+    
+    .header .navigation-bar li .sub-menu-1{
+        display: none;
+    }
+    .add-ons{
+        margin-top: 20%;
+    }
+}
